@@ -16,7 +16,6 @@ def merge_sort(string):
             i += 1
     final_arr += left_string[i:]
     final_arr += right_string[j:]
-    print(final_arr)
     return final_arr
 
 
