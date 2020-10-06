@@ -30,11 +30,10 @@ def is_anagram(first_string, second_string):
         return False
     first = merge_sort(list(first_string))
     second = merge_sort(list(second_string))
-    answer = True
     for item in range(len(first)):
         if first[item] != second[item]:
-            answer = False
-    return answer
+            return False
+    return True
 
 
 first_string = "cassio"
