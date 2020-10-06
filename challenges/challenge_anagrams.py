@@ -1,67 +1,55 @@
 def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
         return False
-    sorted_first = sort_list(first_string)
-    sorted_second = sort_list(second_string)
-    print(sorted_first)
-    print(sorted_second)
+    sorted_first = merge_sort(list(first_string))
+    sorted_second = merge_sort(list(second_string))
+
     if sorted_first == sorted_second:
         return True
     return False
 
 
-def sort_list(list_to_sort):
-    list_size = len(list_to_sort)
-    n_loops = 0
-    while list_size != 0 and list_size != 1:
-        n_loops += 1
-        list_size = list_size // 2
+def merge_sort(array):
 
-    list_to_iterate = list_to_sort
-    iteraction = len(list_to_sort)
-    new_list = []
-    for n in range(1, n_loops + 1):
-        for i in range(0, iteraction - 1, 2):
-            new_list.append(merge_two_sorted_lists([*list_to_iterate[i]], [*list_to_iterate[i+1]]))
-        if iteraction % 2 != 0:
-            new_list.append(list_to_iterate[-1])
-        list_to_iterate = new_list
-        new_list = []
-        iteraction = len(list_to_iterate)
-    if len(list_to_iterate) == 2:
-        return merge_two_sorted_lists(list_to_iterate[0], list_to_iterate[1])
-    return list_to_iterate
+    if len(array) <= 1:
+        return array
 
-def merge_two_sorted_lists(list1, list2):
-    list_to_return = []
-    list1_position, list2_position = 0, 0
-    while list1_position <= len(list1) and list2_position <= len(list2):
+    mid = len(array) // 2
 
-        if list2_position == len(list2):
-            list_to_return.extend(list1[list1_position:])
-            list2_position += list2_position + 1
-        elif list1_position == len(list1):
-            list_to_return.extend(list2[list2_position:])
-            list1_position += list1_position + 1
-        elif list1[list1_position] <= list2[list2_position]:
-            list_to_return.append(list1[list1_position])
-            list1_position += 1
+    left, right = merge_sort(array[:mid]), merge_sort(array[mid:])
+    return merge(left, right, array.copy())
+
+
+def merge(left, right, merged):
+    left_cursor, right_cursor = 0, 0
+
+    while left_cursor < len(left) and right_cursor < len(right):
+        if left[left_cursor] <= right[right_cursor]:
+            merged[left_cursor + right_cursor] = left[left_cursor]
+            left_cursor += 1
         else:
-            list_to_return.append(list2[list2_position])
-            list2_position += 1
+            merged[left_cursor + right_cursor] = right[right_cursor]
+            right_cursor += 1
 
-    return list_to_return
+    for left_cursor in range(left_cursor, len(left)):
+        merged[left_cursor + right_cursor] = left[left_cursor]
+
+    for right_cursor in range(right_cursor, len(right)):
+        merged[left_cursor + right_cursor] = right[right_cursor]
+
+    return merged
 
 
-first_string = "opoass"
-second_string = "aoopss"
+first_string = "oafgieef"
+second_string = "foieeagsfgsa"
 print(is_anagram(first_string, second_string))
 
-# sort_list([1,2,3,4])
-
-# merge_two_lists([8], [7])
-# print(merge_two_sorted_lists('aabbc','abbcc'))
-
-# print(sort_list("feaaaaadmjp"))
-
-
+# Porque a complexidade é nlog n?
+# O número de divisões é sempre log n:
+# Se a lista tiver entre 1 e 2^1 elementos -> 1
+# Se a lista tiver entre 1 e 2^2 elementos -> 2
+# Se a lista tiver entre 1 e 2^3 elementos -> 3
+# Se a lista tiver entre 1 e 2^4 elementos -> 4
+# Se a lista tiver entre 1 e 2^5 elementos -> 5
+# Como temos n elementos cada um deles terá que ser lido 1 vez
+# logo teremos nlog n
