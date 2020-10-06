@@ -19,6 +19,13 @@ def merge(left, right, merged):
     return merged
 
 
+def valid_anagram(string_merged):
+    for index in range(len(string_merged)):
+        if index % 2 > 0 and string_merged[index] != string_merged[index - 1]:
+            return False
+    return True
+
+
 def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
         return False
@@ -33,10 +40,7 @@ def is_anagram(first_string, second_string):
         return merge(left, right, array)
 
     merged = merge_sort(first_string, second_string)
-    for index in range(len(merged)):
-        if index % 2 > 0 and merged[index] != merged[index - 1]:
-            return False
-    return True
+    return valid_anagram(merged)
 
 
 first_string = "pato"
