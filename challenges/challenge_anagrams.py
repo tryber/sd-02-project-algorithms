@@ -25,6 +25,6 @@ def is_anagram(first_string, second_string):
     return (merge_sort(first_string) == merge_sort(second_string))
 
 
-first_string = "pedra"
-second_string = "perda"
+first_string = "agua"
+second_string = "agua"
 print(is_anagram(first_string, second_string))
