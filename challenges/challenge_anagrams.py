@@ -1,22 +1,37 @@
-def how_index(lista, refer):
-    for index, item in enumerate(lista):
-        if item == refer:
-            return index
+def merge_sort(array):
+    if len(array) <= 1:
+        return array
+    mid = len(array) // 2
+    left, right = merge_sort(array[:mid]), merge_sort(array[mid:])
+    return merge(left, right, array.copy())
+
+
+def merge(left, right, merged):
+
+    left_cursor, right_cursor = 0, 0
+
+    while left_cursor < len(left) and right_cursor < len(right):
+
+        if left[left_cursor] <= right[right_cursor]:
+            merged[left_cursor + right_cursor] = left[left_cursor]
+            left_cursor += 1
+        else:
+            merged[left_cursor + right_cursor] = right[right_cursor]
+            right_cursor += 1
+    for left_cursor in range(left_cursor, len(left)):
+        merged[left_cursor + right_cursor] = left[left_cursor]
+
+    for right_cursor in range(right_cursor, len(right)):
+        merged[left_cursor + right_cursor] = right[right_cursor]
+
+    return merged
 
 
 def is_anagram(first_string, second_string):
-    if first_string[::-1] == second_string:
-        return True
-    word_st = list(first_string)
-    word_nd = list(second_string)
-    for i, letter in enumerate(word_st):
-        if letter != word_nd[i]:
-            index_letter = how_index(word_nd, letter)
-            word_st[i], word_st[index_letter] = word_st[index_letter], word_st[i]
-    if word_st == word_nd:
-        return True
-    else:
-        return False
+    first_word = merge_sort(list(first_string))
+    second_word = merge_sort(list(second_string))
+
+    return first_word == second_word
 
 
 first_string = "tfuuor"
