@@ -1,10 +1,9 @@
 def is_anagram(first_string, second_string):
-    if sorted(first_string) == sorted(second_string): 
-        return True  
-    else: 
-        return False
+    print(list(first_string))
+    print(list(second_string))
 
-       
-first_string = ""
-second_string = ""
+
+
+first_string = "some"
+second_string = "mose"
 print(is_anagram(first_string, second_string))
