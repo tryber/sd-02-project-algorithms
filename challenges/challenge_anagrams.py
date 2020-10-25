@@ -1,5 +1,6 @@
 def is_anagram(first_string, second_string):
     print(list(first_string))
+    
     print(list(second_string))
 
 
