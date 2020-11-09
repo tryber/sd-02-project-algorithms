@@ -9,8 +9,8 @@ Yaaaasss girl, esse projeto vai ser foda!!!
 1. Clone o repositório
 
 -   `git clone git@github.com:tryber/sd-02-project-algorithms.git`.
--   Entre na pasta do repositório que você acabou de clonar:
-    -   `sd-02-project-algorithms`
+-   Entre na pasta do repositório que você acabou de clonar: - `sd-02-project-algorithms`
+    export PYTHONPATH="\${PYTHONPATH}:/home/anderson.bolivar/Documents/projects/sd-02-project-algorithms"
 
 2. Crie o ambiente virtual para o projeto
 
