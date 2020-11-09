@@ -1,53 +1,6 @@
 
 ### Requisitos bônus:
 
-#### 4 - Encontrando números repetidos (Algoritmo de busca)
-
-Dada um _array_ de números inteiros contendo `n + 1` inteiros, chamado de `nums`, onde cada inteiro está no intervalo `[1, n]`.
-
-Retorne apenas um número duplicado em `nums`.
-
-**Exemplo:**
-
-```md
-nums = [1, 3, 4, 2, 2]
-
-# saída: 2
-
-nums = [3, 1, 3, 4, 2]
-
-# saída: 3
-
-nums = [1, 1]
-
-# saída: 1
-
-nums = [1, 1, 2]
-
-# saída: 1
-
-nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
-
-# saída: 7
-```
-
-##### As seguintes verificações serão feitas:
-
--   Limite de complexidade de tempo aceitável: `O(n log n)`;
-
--   Faça o algoritmo aplicando busca binária e utilizando a solução iterativa;
-
--   O array montado deve:
-
-    -   Ter apenas números inteiros positivos maiores do que 1;
-
-    -   Ter apenas um único número repetindo duas ou mais vezes, todos os outros números devem aparecer apenas uma vez;
-
-    -   Ter, no mínimo, dois números.
-
--   Código deve ser feito dentro do arquivo `challenge_find_the_duplicate.py`.
-
-_Dica:_ Ordene o array.
 
 #### 5 - Palíndromos (Iteratividade)
 
