@@ -1,10 +1,6 @@
 # Boas vindas ao repositório do projeto de Algorithms!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
----
+Yaaaasss girl, esse projeto vai ser foda!!!
 
 ## Instruções para entregar seu projeto:
 
@@ -12,50 +8,52 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 1. Clone o repositório
 
-- `git clone git@github.com:tryber/sd-02-project-algorithms.git`.
-- Entre na pasta do repositório que você acabou de clonar:
-  - `sd-02-project-algorithms`
+-   `git clone git@github.com:tryber/sd-02-project-algorithms.git`.
+-   Entre na pasta do repositório que você acabou de clonar: - `sd-02-project-algorithms`
+    export PYTHONPATH="\${PYTHONPATH}:/home/anderson.bolivar/Documents/projects/sd-02-project-algorithms"
 
 2. Crie o ambiente virtual para o projeto
 
-- `python3 -m venv .venv && source .venv/bin/activate`
+-   `python3 -m venv .venv && source .venv/bin/activate`
+
+export PYTHONPATH="\${PYTHONPATH}:/home/anderson.bolivar/Documents/projects/sd-02-project-algorithms"
 
 3. Crie uma branch a partir da branch `master`
 
-- Verifique que você está na branch `master`
-  - Exemplo: `git branch`
-- Se não estiver, mude para a branch `master`
-  - Exemplo: `git checkout master`
-- Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
-  - Você deve criar uma branch no seguinte formato: `nome-github-nome-do-projeto`
-  - Exemplo: `git checkout -b exemplo-algorithms`
+-   Verifique que você está na branch `master`
+    -   Exemplo: `git branch`
+-   Se não estiver, mude para a branch `master`
+    -   Exemplo: `git checkout master`
+-   Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
+    -   Você deve criar uma branch no seguinte formato: `nome-github-nome-do-projeto`
+    -   Exemplo: `git checkout -b exemplo-algorithms`
 
 4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
 
-- Verifique que as mudanças ainda não estão no _stage_
-  - Exemplo: `git status` (deve aparecer listada a pasta _exemplo_ em vermelho)
-- Adicione o novo arquivo ao _stage_ do Git
-  - Exemplo:
-    - `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
-    - `git status` (deve aparecer listado o arquivo _exemplo/README.md_ em verde)
-- Faça o `commit` inicial
-  - Exemplo:
-    - `git commit -m 'iniciando o projeto algorithms'` (fazendo o primeiro commit)
-    - `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
+-   Verifique que as mudanças ainda não estão no _stage_
+    -   Exemplo: `git status` (deve aparecer listada a pasta _exemplo_ em vermelho)
+-   Adicione o novo arquivo ao _stage_ do Git
+    -   Exemplo:
+        -   `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
+        -   `git status` (deve aparecer listado o arquivo _exemplo/README.md_ em verde)
+-   Faça o `commit` inicial
+    -   Exemplo:
+        -   `git commit -m 'iniciando o projeto algorithms'` (fazendo o primeiro commit)
+        -   `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
 5. Adicione a sua branch com o novo `commit` ao repositório remoto
 
-- Usando o exemplo anterior: `git push -u origin exemplo-project-name`
+-   Usando o exemplo anterior: `git push -u origin exemplo-project-name`
 
 6. Crie um novo `Pull Request` _(PR)_
 
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-02-project-algorithms/pulls)
-- Clique no botão verde _"New pull request"_
-- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-- Clique no botão verde _"Create pull request"_
-- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-- **Não se preocupe em preencher mais nada por enquanto!**
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-02-project-algorithms/pulls) e confira que o seu _Pull Request_ está criado
+-   Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-02-project-algorithms/pulls)
+-   Clique no botão verde _"New pull request"_
+-   Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
+-   Clique no botão verde _"Create pull request"_
+-   Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+-   **Não se preocupe em preencher mais nada por enquanto!**
+-   Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-02-project-algorithms/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
@@ -77,15 +75,15 @@ Para fixar os conteúdos de algoritmos e estrutura de dados vistos até agora, v
 
 Pessoas desenvolvedoras de software, além de serem muito boas em implementações, devem, também, ser boas resolvendo problemas e otimizando algoritmos. No projeto de hoje, vamos treinar, ainda mais, a sua capacidade de resolução de problemas e otimização de código, que envolve algumas habilidades:
 
-  - Lógica;
+-   Lógica;
 
-  - Capacidade de interpretação do problema;
+-   Capacidade de interpretação do problema;
 
-  - Capacidade de interpretação de um código legado;
+-   Capacidade de interpretação de um código legado;
 
-  - Capacidade de resolução do problema, de forma otimizada;
+-   Capacidade de resolução do problema, de forma otimizada;
 
-  - Resolver o problemas/Otimizar algoritmos mesmo sob pressão.
+-   Resolver o problemas/Otimizar algoritmos mesmo sob pressão.
 
 Tendo essas habilidades descritas acima, junto com algumas outras, farão de você uma pessoa desenvolvedora que terá muita facilidade em diversas situações problemáticas do dia-a-dia.
 
@@ -102,11 +100,11 @@ Este repositório já contém um _template_ com a estrutura de diretórios e arq
 ```md
 .
 ├── challenges
-│   ├── challenge_anagrams.py
-│   ├── challenge_find_the_duplicate.py
-│   ├── challenge_palindromes_iterative.py
-│   ├── challenge_palindromes_recursive.py
-│   └── challenge_study_schedule.py
+│ ├── challenge_anagrams.py
+│ ├── challenge_find_the_duplicate.py
+│ ├── challenge_palindromes_iterative.py
+│ ├── challenge_palindromes_recursive.py
+│ └── challenge_study_schedule.py
 ├── README.md
 ├── requirements.txt
 └── setup.cfg
@@ -159,15 +157,16 @@ _Dica:_ Quando vou saber qual o melhor horário? Quando o contador retornado pel
 ```md
 # Nos arrays temos 6 estudantes
 
-# estudante   1  2  3  4  5  6
-start_time = [2, 1, 2, 1, 4, 4]
-end_time   = [2, 2, 3, 5, 5, 5]
+# estudante 1 2 3 4 5 6
 
-target_time = 5  # saída: 3, pois o quarto, o quinto e o sexto estudante estavam estudando nesse horário
-target_time = 4  # saída: 3, pois o quarto, o quinto e o sexto estudante estavam estudando nesse horário ou em um horário em que o 4 está no meio (no caso do quarto estudante)
-target_time = 3  # saída: 2, pois o terceiro, o quarto e o quinto estudante estavam estudando nesse horário ou em um horário em que o 3 está no meio (no caso do quarto estudante)
-target_time = 2  # saída: 4, pois o primeiro, o segundo, o terceiro e o quarto estudante estavam estudando nesse horário ou em um horário em que o 2 está no meio
-target_time = 1  # saída: 2, pois o segundo e o quarto estudante estavam estudando nesse horário
+start_time = [2, 1, 2, 1, 4, 4]
+end_time = [2, 2, 3, 5, 5, 5]
+
+target_time = 5 # saída: 3, pois o quarto, o quinto e o sexto estudante estavam estudando nesse horário
+target_time = 4 # saída: 3, pois o quarto, o quinto e o sexto estudante estavam estudando nesse horário ou em um horário em que o 4 está no meio (no caso do quarto estudante)
+target_time = 3 # saída: 2, pois o terceiro, o quarto e o quinto estudante estavam estudando nesse horário ou em um horário em que o 3 está no meio (no caso do quarto estudante)
+target_time = 2 # saída: 4, pois o primeiro, o segundo, o terceiro e o quarto estudante estavam estudando nesse horário ou em um horário em que o 2 está no meio
+target_time = 1 # saída: 2, pois o segundo e o quarto estudante estavam estudando nesse horário
 
 Para esse exemplo, julgue que o melhor horário é o `2`
 ```
@@ -179,30 +178,31 @@ Caso mais de um `target_time` tenham empatado com a maior saída, o melhor horá
 ```md
 # Nos arrays temos 4 estudantes
 
-# estudante   1  2  3  4
-start_time = [4, 1, 3, 2]
-end_time   = [4, 3, 4, 5]
+# estudante 1 2 3 4
 
-target_time = 5  # saída: 1, pois só o estudante do último índice estudou até 5
-target_time = 4  # saída: 3, pois o primeiro estudante, o segundo e o último estudaram no horário de 4 ou em um horário que o 4 está no meio (no caso do último estudante)
-target_time = 3  # saída: 3, pois o segundo estudante, o terceiro e o último estudaram no horário de 3 ou em um horário que o 3 está no meio (no caso do último estudante)
-target_time = 2  # saída: 2, pois o segundo e o último estudante estudaram no horário de 2 ou em um horário que o 2 está no meio (no caso do segundo estudante)
-target_time = 1  # saída: 1, pois só o segundo estudante estudou no horário 1 (no caso começou no horário 1)
+start_time = [4, 1, 3, 2]
+end_time = [4, 3, 4, 5]
+
+target_time = 5 # saída: 1, pois só o estudante do último índice estudou até 5
+target_time = 4 # saída: 3, pois o primeiro estudante, o segundo e o último estudaram no horário de 4 ou em um horário que o 4 está no meio (no caso do último estudante)
+target_time = 3 # saída: 3, pois o segundo estudante, o terceiro e o último estudaram no horário de 3 ou em um horário que o 3 está no meio (no caso do último estudante)
+target_time = 2 # saída: 2, pois o segundo e o último estudante estudaram no horário de 2 ou em um horário que o 2 está no meio (no caso do segundo estudante)
+target_time = 1 # saída: 1, pois só o segundo estudante estudou no horário 1 (no caso começou no horário 1)
 
 Para esse exemplo, julgue que o melhor horário é entre `3` e `4`
 ```
 
 ##### As seguintes verificações serão feitas:
 
-- Limite de complexidade de tempo aceitável: `O(n)`;
+-   Limite de complexidade de tempo aceitável: `O(n)`;
 
-- Algoritmo deve utilizar a solução iterativa;
+-   Algoritmo deve utilizar a solução iterativa;
 
-- Monte o `start_time` e o `end_time` da maneira que quiser;
+-   Monte o `start_time` e o `end_time` da maneira que quiser;
 
-- Caso o `target_time` passado não exista, o valor retornado pela função deve ser `0`;
+-   Caso o `target_time` passado não exista, o valor retornado pela função deve ser `0`;
 
-- Código deve ser feito dentro do arquivo `challenge_study_schedule.py`.
+-   Código deve ser feito dentro do arquivo `challenge_study_schedule.py`.
 
 #### 2 - Palíndromos (Recursividade)
 
@@ -214,30 +214,35 @@ _Curiosidade:_ Existem frases palíndromas também, porém nesse exercício irem
 
 ```md
 word = "ANA"
+
 # saída: True
 
 word = "SOCOS"
+
 # saída: True
 
 word = "REVIVER"
+
 # saída: True
 
 word = "COXINHA"
+
 # saída: False
 
 word = "AGUA"
+
 # saída: False
 ```
 
 ##### As seguintes verificações serão feitas:
 
-- O algoritmo deve ser feito utilizando a solução recursiva;
+-   O algoritmo deve ser feito utilizando a solução recursiva;
 
-- Não se preocupe com a analise da complexidade desse algoritmo;
+-   Não se preocupe com a analise da complexidade desse algoritmo;
 
-- Se for passado uma _string_ vazia, retorne `False`;
+-   Se for passado uma _string_ vazia, retorne `False`;
 
-- Código deve ser feito dentro do arquivo `challenge_palindromes_recursive.py`.
+-   Código deve ser feito dentro do arquivo `challenge_palindromes_recursive.py`.
 
 #### 3 - Anagramas (Algoritmo de ordenação)
 
@@ -252,40 +257,44 @@ Mas o que é um anagrama? Vamos ver sua definição para entendermos melhor:
 ```md
 first_string = "amor"
 second_string = "roma"
-# saída: True
-# Explicação: Nesse caso o retorno da função é True, pois a palavra "roma" é um anagrama de "amor".
 
+# saída: True
+
+# Explicação: Nesse caso o retorno da função é True, pois a palavra "roma" é um anagrama de "amor".
 
 first_string = "pedra"
 second_string = "perda"
-# saída: True
-# Explicação: Nesse caso o retorno também é True. Na palavra "pedra", trocamos o "d" de lugar com o "r" e formamos "perda", sendo assim um anagrama.  
 
+# saída: True
+
+# Explicação: Nesse caso o retorno também é True. Na palavra "pedra", trocamos o "d" de lugar com o "r" e formamos "perda", sendo assim um anagrama.
 
 first_string = "pato"
 second_string = "tapo"
+
 # saída: True
 
-
 # Agora vamos pra um exemplo onde não existe um anagrama
+
 first_string = "coxinha"
 second_string = "empada"
+
 # saída: False
 ```
 
 ##### As seguintes verificações serão feitas:
 
-- Limite de complexidade de tempo aceitável: `O(n log n)`;
+-   Limite de complexidade de tempo aceitável: `O(n log n)`;
 
-- Utilize qualquer algoritmo que quiser (_Selection sort_, _Insertion sort_, _Bubble sort_, _Merge sort_, _Quick sort_ ou _TimSort_), desde que atinja a complexidade `O(n log n)`. Ou seja, preste bastante atenção na escolha do algoritmo e na implementação do mesmo;
+-   Utilize qualquer algoritmo que quiser (_Selection sort_, _Insertion sort_, _Bubble sort_, _Merge sort_, _Quick sort_ ou _TimSort_), desde que atinja a complexidade `O(n log n)`. Ou seja, preste bastante atenção na escolha do algoritmo e na implementação do mesmo;
 
-- Você deve fazer sua própria implementação do algoritmo de ordenação. Ou seja, você não poderá utilizar bibliotecas com os algoritmos prontos;
+-   Você deve fazer sua própria implementação do algoritmo de ordenação. Ou seja, você não poderá utilizar bibliotecas com os algoritmos prontos;
 
-- A função retorna `True` caso uma _string_ seja um anagrama da outra;
+-   A função retorna `True` caso uma _string_ seja um anagrama da outra;
 
-- A função retorna `False` caso uma _string_ **não seja** um anagrama da outra;
+-   A função retorna `False` caso uma _string_ **não seja** um anagrama da outra;
 
-- Código deve ser feito dentro do arquivo `challenge_anagrams.py`.
+-   Código deve ser feito dentro do arquivo `challenge_anagrams.py`.
 
 ### Requisitos bônus:
 
@@ -299,63 +308,68 @@ Retorne apenas um número duplicado em `nums`.
 
 ```md
 nums = [1, 3, 4, 2, 2]
+
 # saída: 2
 
 nums = [3, 1, 3, 4, 2]
+
 # saída: 3
 
 nums = [1, 1]
+
 # saída: 1
 
 nums = [1, 1, 2]
+
 # saída: 1
 
 nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
+
 # saída: 7
 ```
 
 ##### As seguintes verificações serão feitas:
 
-- Limite de complexidade de tempo aceitável: `O(n log n)`;
+-   Limite de complexidade de tempo aceitável: `O(n log n)`;
 
-- Faça o algoritmo aplicando busca binária e utilizando a solução iterativa;
+-   Faça o algoritmo aplicando busca binária e utilizando a solução iterativa;
 
-- O array montado deve:
+-   O array montado deve:
 
-  - Ter apenas números inteiros positivos maiores do que 1;
+    -   Ter apenas números inteiros positivos maiores do que 1;
 
-  - Ter apenas um único número repetindo duas ou mais vezes, todos os outros números devem aparecer apenas uma vez;
+    -   Ter apenas um único número repetindo duas ou mais vezes, todos os outros números devem aparecer apenas uma vez;
 
-  - Ter, no mínimo, dois números.
+    -   Ter, no mínimo, dois números.
 
-- Código deve ser feito dentro do arquivo `challenge_find_the_duplicate.py`.
+-   Código deve ser feito dentro do arquivo `challenge_find_the_duplicate.py`.
 
 _Dica:_ Ordene o array.
 
 #### 5 - Palíndromos (Iteratividade)
 
-Resolva o mesmo problema, apresentado no [requisito dois](####-2---Palíndromos-(Recursividade)), porém dessa vez utilizando a solução iterativa.
+Resolva o mesmo problema, apresentado no [requisito dois](<####-2---Palíndromos-(Recursividade)>), porém dessa vez utilizando a solução iterativa.
 
 ##### As seguintes verificações serão feitas:
 
-- Limite de complexidade de tempo aceitável: `O(n)`;
+-   Limite de complexidade de tempo aceitável: `O(n)`;
 
-- Algoritmo deve utilizar a solução iterativa;
+-   Algoritmo deve utilizar a solução iterativa;
 
-- Código deve ser feito dentro do arquivo `challenge_palindromes_iterative.py`.
+-   Código deve ser feito dentro do arquivo `challenge_palindromes_iterative.py`.
 
 ### DURANTE O DESENVOLVIMENTO
 
-- Faça `commits` das alterações que você fizer no código regularmente
+-   Faça `commits` das alterações que você fizer no código regularmente
 
-- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
+-   Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
 
-- Os comandos que você utilizará com mais frequência são:
-  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
-  2. `git add` _(para adicionar arquivos ao stage do Git)_
-  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
-  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
-  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
+-   Os comandos que você utilizará com mais frequência são:
+    1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
+    2. `git add` _(para adicionar arquivos ao stage do Git)_
+    3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
+    4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
+    5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
 
 ---
 
@@ -363,13 +377,13 @@ Resolva o mesmo problema, apresentado no [requisito dois](####-2---Palíndromos-
 
 Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
 
-- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
+-   Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
 
-  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+    -   No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
 
-  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+    -   No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
 
-  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-02`.
+    -   No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-02`.
 
 Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
 

@@ -1,0 +1,15 @@
+
+### Requisitos bônus:
+
+
+#### 5 - Palíndromos (Iteratividade)
+
+Resolva o mesmo problema, apresentado no [requisito dois](<####-2---Palíndromos-(Recursividade)>), porém dessa vez utilizando a solução iterativa.
+
+##### As seguintes verificações serão feitas:
+
+-   Limite de complexidade de tempo aceitável: `O(n)`;
+
+-   Algoritmo deve utilizar a solução iterativa;
+
+-   Código deve ser feito dentro do arquivo `challenge_palindromes_iterative.py`.
